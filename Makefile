@@ -1,6 +1,7 @@
 BINDIR = $(DESTDIR)/usr/bin
 all: fcgiwrap
 install: all
+	mkdir $(BINDIR)
 	cp fcgiwrap $(BINDIR)
 
 fcgiwrap: fcgiwrap.c
